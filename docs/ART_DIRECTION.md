@@ -9,27 +9,29 @@ Conto de fadas em decomposição: sombras pesadas, vermelho usado com intenção
 | Noite | #10121B | Fundo e áreas vazias |
 | Cinza de osso | #D8D2C5 | Texto e detalhes neutros |
 | Cinza de cinza | #6D6875 | Obstáculos e elementos secundários |
-| Escarlate | #D7263D | Perigo, vida, nós vulneráveis e críticos |
+| Escarlate | #D7263D | Perigo, vida e dano crítico |
 | Vinho | #6B1E2F | Inimigos e sangue estilizado |
-| Violeta | #8C6CCF | Magia, elite e chefes |
-| Ouro velho | #D9A441 | Recompensas e interações |
+| Violeta | #8C6CCF | Ímpeto, magia e elites |
+| Ouro velho | #D9A441 | Caixa dos Ecos, inimigos capturáveis e recompensas |
 
 ## Personagens
-- Liora: capa triangular, máscara clara, núcleo escarlate no peito e lâmina curta.
-- Inimigos: silhueta reconhecível primeiro; detalhes são opcionais.
-- Chefes: pelo menos três vezes maiores que Liora, com ataques marcados por telegráfos no piso.
+- Pandora: capa triangular, máscara clara, uma caixa dourada escura presa ao peito e lâmina curta.
+- Caixa dos Ecos: cubo/caixa flutuante com fechaduras e linhas douradas; abre apenas durante a captura.
+- Inimigos: silhueta reconhecível primeiro; um Eco em estado de Ruptura ganha contorno dourado.
+- Chefes: pelo menos três vezes maiores que Pandora, com ataques marcados por telegráfos no piso.
 
-## Feedback de combate
-- Ataque conectado: flash curto, partículas, recuo e som seco.
-- Crítico no nó: moldura branca breve, partículas escarlates e desaceleração de 60 a 90 ms.
-- Dano recebido: vinheta escura e tremor opcional, nunca piscada que atrapalhe acessibilidade.
-- Ataque inimigo: indicador no chão antes do dano e contraste com o fundo.
+## Feedback de captura
+- Inimigo em Ruptura: pulso dourado e símbolo de fechadura quebrada.
+- Captura iniciada: fios dourados conectam Pandora, Caixa e alvo.
+- Captura concluída: Eco entra na Caixa como faísca colorida, com breve desaceleração de 60 a 90 ms.
+- Captura interrompida: a Caixa se fecha de forma brusca e a Carga aumenta levemente.
 
 ## Interface
 - HUD discreto nos cantos.
-- Vida em barra horizontal escarlate; Fôlego em barra violeta/rosa.
+- Vida em barra horizontal escarlate; Ímpeto em barra violeta.
+- Medidor da Caixa em ouro velho; marcas visíveis mostram risco de Ruptura.
+- Até três ícones de Ecos equipados.
 - Texto com tipografia serifada para títulos e sans-serif clara no HUD.
-- Alto contraste e ícones acompanhados de texto quando a informação for crítica.
 
 ## Resolução e escala
 - Área lógica inicial: 960 x 540.
