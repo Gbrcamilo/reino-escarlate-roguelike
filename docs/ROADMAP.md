@@ -23,12 +23,14 @@
 - [x] Adicionar efeitos de impacto e feedback temporário.
 - [x] Criar inimigo de projétil e inimigo de investida.
 
-## Marco 3 — Run do MVP
-- [ ] Criar seis modelos de sala.
-- [ ] Sortear sequência de 8 a 12 salas com seed.
-- [ ] Adicionar cinco inimigos e cinco Ecos.
-- [ ] Criar Câmara da Caixa, cura e mercador simples.
-- [ ] Persistir recompensa meta no ambiente de deploy.
+## Marco 3 — Expedição Inicial
+- [x] Preservar a build de Pandora entre salas.
+- [x] Implementar transição fluida por porta dourada e fade.
+- [x] Criar segunda arena de combate com layout diferente.
+- [x] Criar Refúgio de Cinzas para recuperação entre combates.
+- [ ] Criar mapa de escolhas e rotas alternativas.
+- [ ] Gerar sequência determinística por seed.
+- [ ] Criar Câmara da Caixa, Mercador e Elite.
 
 ## Marco 4 — Guardião e Polimento
 - [ ] Criar O Lenhador Sem Rosto com três fases.

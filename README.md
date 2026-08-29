@@ -4,28 +4,21 @@ Roguelite de ação 2D original feito com TypeScript e Canvas 2D. **Pandora** ex
 
 ## Estado atual
 
-O protótipo agora contém uma sala roguelite jogável completa:
+O protótipo contém uma expedição curta com transição fluida entre salas:
 
-- Arena com obstáculos sólidos e portas seladas por combate
-- Três ondas de inimigos por sala
-- Vulto Rastejante, Arqueira de Vidro e Espantalho Costurado
-- Ataque, esquiva com Ímpeto, projéteis e investidas
-- Estado de Ruptura e captura de Ecos com `F`
-- Essência, Carga da Caixa, partículas e feedback visual
-- Escolha de uma entre três relíquias após cada onda
-- Tela de vitória ao concluir a terceira onda e tela de derrota
+- Clareira dos Sussurros: combate em três ondas e escolhas de relíquias
+- Refúgio de Cinzas: recuperação de Vida, Ímpeto e Carga da Caixa
+- Jardim dos Espinhos Mortos: segunda arena de combate com layout diferente
+- Porta dourada de saída, fade entre arenas e introdução de sala
+- Persistência de Vida, Essência, Carga e relíquias durante a expedição
+- Vulto Rastejante, Arqueira de Vidro, Espantalho Costurado, projéteis e investidas
+- Captura de Ecos com `F` em inimigos em Ruptura
 
 ## Executar localmente
 
 ```bash
 npm install
 npm run dev
-```
-
-Para gerar a versão de produção:
-
-```bash
-npm run build
 ```
 
 ## Controles
@@ -35,22 +28,24 @@ npm run build
 | WASD | Mover Pandora |
 | J | Atacar |
 | Espaço | Esquivar; consome Ímpeto |
-| F | Selar Eco de inimigo em Ruptura |
+| F | Selar Eco em Ruptura; ativar altar no Refúgio de Cinzas |
 | 1, 2, 3 | Escolher relíquia entre ondas |
-| R | Reiniciar a sala |
+| R | Reiniciar a expedição |
 
-## Fluxo da sala
+## Como avançar
 
-1. Derrote ou sele todos os inimigos de uma onda.
-2. Escolha uma relíquia com `1`, `2` ou `3`.
-3. Sobreviva às três ondas.
-4. Use captura de Ecos para ganhar Essência e melhorar sua run.
+1. Limpe todas as ondas de uma sala de combate.
+2. Escolha uma relíquia usando `1`, `2` ou `3`.
+3. Caminhe até a porta dourada no topo da arena.
+4. No Refúgio de Cinzas, aproxime-se do altar central e pressione `F`; então use a porta dourada.
+5. Vida, Essência, Carga e relíquias permanecem entre salas.
 
 ## Documentação
 
 - [GDD](docs/GDD.md)
 - [Sistema de Pandora](docs/PANDORA_SYSTEM.md)
 - [Sistema de sala](docs/ROOM_SYSTEM.md)
+- [Transição entre salas](docs/ROOM_TRANSITIONS.md)
 - [Arquitetura técnica](docs/TECHNICAL_DESIGN.md)
 - [Direção de arte](docs/ART_DIRECTION.md)
 - [Roadmap](docs/ROADMAP.md)
