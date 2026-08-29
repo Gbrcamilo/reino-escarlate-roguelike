@@ -1,19 +1,19 @@
 # Reino Escarlate
 
-Roguelite de ação 2D original, feito com TypeScript e Canvas 2D. **Pandora** explora um conto de fadas corrompido carregando a **Caixa dos Ecos**, um artefato que sela fragmentos de monstros enfraquecidos e os converte em poder.
+Roguelite de ação 2D original feito com TypeScript e Canvas 2D. **Pandora** explora um conto de fadas corrompido carregando a **Caixa dos Ecos**, um artefato que sela fragmentos de monstros enfraquecidos e os converte em poder.
 
 ## Estado atual
 
-O vertical slice jogável inclui:
+O protótipo agora contém uma sala roguelite jogável completa:
 
-- Movimento em oito direções
-- Ataque corpo a corpo
-- Esquiva com invencibilidade breve e gasto de Ímpeto
-- Inimigo perseguidor com vida e ataque
-- Estado de Ruptura abaixo de 25% de vida
-- Captura de Eco com `F` perto de inimigos em Ruptura
-- Essência, Carga da Caixa e contador de Ecos selados
-- Caixa flutuante, partículas douradas, feedback visual e tela de derrota
+- Arena com obstáculos sólidos e portas seladas por combate
+- Três ondas de inimigos por sala
+- Vulto Rastejante, Arqueira de Vidro e Espantalho Costurado
+- Ataque, esquiva com Ímpeto, projéteis e investidas
+- Estado de Ruptura e captura de Ecos com `F`
+- Essência, Carga da Caixa, partículas e feedback visual
+- Escolha de uma entre três relíquias após cada onda
+- Tela de vitória ao concluir a terceira onda e tela de derrota
 
 ## Executar localmente
 
@@ -28,7 +28,7 @@ Para gerar a versão de produção:
 npm run build
 ```
 
-## Controles atuais
+## Controles
 
 | Tecla | Ação |
 |---|---|
@@ -36,19 +36,21 @@ npm run build
 | J | Atacar |
 | Espaço | Esquivar; consome Ímpeto |
 | F | Selar Eco de inimigo em Ruptura |
-| R | Reiniciar a arena |
+| 1, 2, 3 | Escolher relíquia entre ondas |
+| R | Reiniciar a sala |
 
-## Fluxo de captura
+## Fluxo da sala
 
-1. Ataque o Vulto até a barra chegar a 25%.
-2. Ele ganhará um contorno dourado: está em Ruptura.
-3. Aproxime-se e pressione `F`.
-4. Pandora recebe Essência e a Caixa acumula Carga.
+1. Derrote ou sele todos os inimigos de uma onda.
+2. Escolha uma relíquia com `1`, `2` ou `3`.
+3. Sobreviva às três ondas.
+4. Use captura de Ecos para ganhar Essência e melhorar sua run.
 
 ## Documentação
 
 - [GDD](docs/GDD.md)
 - [Sistema de Pandora](docs/PANDORA_SYSTEM.md)
+- [Sistema de sala](docs/ROOM_SYSTEM.md)
 - [Arquitetura técnica](docs/TECHNICAL_DESIGN.md)
 - [Direção de arte](docs/ART_DIRECTION.md)
 - [Roadmap](docs/ROADMAP.md)

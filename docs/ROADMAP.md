@@ -16,11 +16,12 @@
 - [x] Criar HUD de Vida, Ímpeto, Essência e Carga.
 
 ## Marco 2 — Uma Sala Completa
-- [ ] Criar barreiras, colisão e portas.
-- [ ] Adicionar ondas e condição de limpeza.
-- [ ] Criar escolha de três relíquias.
-- [ ] Implementar tela de derrota e reinício.
-- [ ] Adicionar efeitos de impacto e sons temporários.
+- [x] Criar barreiras, colisão e portas.
+- [x] Adicionar três ondas e condição de limpeza.
+- [x] Criar escolha de três relíquias.
+- [x] Implementar tela de vitória, derrota e reinício.
+- [x] Adicionar efeitos de impacto e feedback temporário.
+- [x] Criar inimigo de projétil e inimigo de investida.
 
 ## Marco 3 — Run do MVP
 - [ ] Criar seis modelos de sala.
