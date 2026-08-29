@@ -4,15 +4,16 @@ Roguelite de ação 2D original, feito com TypeScript e Canvas 2D. **Pandora** e
 
 ## Estado atual
 
-O projeto inclui um vertical slice leve e jogável:
+O vertical slice jogável inclui:
 
 - Movimento em oito direções
 - Ataque corpo a corpo
-- Esquiva com invencibilidade breve
+- Esquiva com invencibilidade breve e gasto de Ímpeto
 - Inimigo perseguidor com vida e ataque
-- Base visual para o futuro sistema de captura pela Caixa dos Ecos
-- HUD de Vida e recurso de combate
-- Partículas, feedback de dano e tela de derrota
+- Estado de Ruptura abaixo de 25% de vida
+- Captura de Eco com `F` perto de inimigos em Ruptura
+- Essência, Carga da Caixa e contador de Ecos selados
+- Caixa flutuante, partículas douradas, feedback visual e tela de derrota
 
 ## Executar localmente
 
@@ -33,9 +34,16 @@ npm run build
 |---|---|
 | WASD | Mover Pandora |
 | J | Atacar |
-| Espaço | Esquivar |
-| F | Reservado para selar Ecos pela Caixa |
+| Espaço | Esquivar; consome Ímpeto |
+| F | Selar Eco de inimigo em Ruptura |
 | R | Reiniciar a arena |
+
+## Fluxo de captura
+
+1. Ataque o Vulto até a barra chegar a 25%.
+2. Ele ganhará um contorno dourado: está em Ruptura.
+3. Aproxime-se e pressione `F`.
+4. Pandora recebe Essência e a Caixa acumula Carga.
 
 ## Documentação
 

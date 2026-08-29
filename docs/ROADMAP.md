@@ -2,18 +2,18 @@
 
 ## Marco 0 — Planejamento
 - [x] Definir premissa original e escopo de MVP.
-- [x] Definir sistema Visão da Fissura.
+- [x] Definir Pandora e a Caixa dos Ecos.
 - [x] Escolher stack Canvas 2D + TypeScript + Vite.
 - [x] Criar documentação de game design, técnica e arte.
 
 ## Marco 1 — Vertical Slice de Combate
-- [ ] Criar projeto Vite TypeScript.
-- [ ] Desenhar arena Canvas responsiva.
-- [ ] Implementar movimento de Liora.
-- [ ] Implementar ataque, esquiva e dano.
-- [ ] Criar um inimigo perseguidor e um inimigo de projéteis.
-- [ ] Implementar Visão da Fissura e nó vulnerável.
-- [ ] Criar HUD de vida e Fôlego.
+- [x] Criar projeto Vite TypeScript.
+- [x] Desenhar arena Canvas responsiva.
+- [x] Implementar movimento de Pandora.
+- [x] Implementar ataque, esquiva e dano.
+- [x] Criar um inimigo perseguidor.
+- [x] Implementar Ruptura e captura de Eco pela Caixa.
+- [x] Criar HUD de Vida, Ímpeto, Essência e Carga.
 
 ## Marco 2 — Uma Sala Completa
 - [ ] Criar barreiras, colisão e portas.
@@ -25,8 +25,8 @@
 ## Marco 3 — Run do MVP
 - [ ] Criar seis modelos de sala.
 - [ ] Sortear sequência de 8 a 12 salas com seed.
-- [ ] Adicionar cinco inimigos e seis relíquias.
-- [ ] Criar cura, evento e mercador simples.
+- [ ] Adicionar cinco inimigos e cinco Ecos.
+- [ ] Criar Câmara da Caixa, cura e mercador simples.
 - [ ] Persistir recompensa meta no ambiente de deploy.
 
 ## Marco 4 — Guardião e Polimento
